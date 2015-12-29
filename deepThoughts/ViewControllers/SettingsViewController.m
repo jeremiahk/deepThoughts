@@ -10,6 +10,8 @@
 
 @interface SettingsViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
 @end
 
 @implementation SettingsViewController
@@ -18,6 +20,8 @@
     [super viewDidLoad];
 }
 
+- (IBAction)circleTouchUpInside:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
