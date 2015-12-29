@@ -17,22 +17,24 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+                        <outlet property="delegate" destination="ENj-i2-f4L" id="RmS-9f-oxd"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="f3V-Tf-utA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="obD-C9-VqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="ENj-i2-f4L" customClass="NavigationController"/>
             </objects>
             <point key="canvasLocation" x="-372" y="975"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="I">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -60,9 +62,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mL9-Vy-Ji5"/>
+                    <connections>
+                        <outlet property="button" destination="zV7-rr-TGv" id="vLB-lf-AyA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <customObject id="OBZ-uj-Nel" customClass="NavigationController"/>
             </objects>
             <point key="canvasLocation" x="396" y="975"/>
         </scene>
