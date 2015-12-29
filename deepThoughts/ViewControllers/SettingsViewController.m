@@ -10,8 +10,6 @@
 
 @interface SettingsViewController ()
 
-@property (weak, nonatomic) IBOutlet UIButton *button;
-
 @end
 
 @implementation SettingsViewController
