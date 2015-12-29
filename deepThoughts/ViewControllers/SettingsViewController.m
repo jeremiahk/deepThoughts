@@ -21,7 +21,7 @@
 }
 
 - (IBAction)circleTouchUpInside:(UIButton *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
