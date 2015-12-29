@@ -15,9 +15,10 @@
 		279BB6651C20E26B00D48D30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279BB6631C20E26B00D48D30 /* LaunchScreen.storyboard */; };
 		279BB6701C20E26B00D48D30 /* deepThoughtsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB66F1C20E26B00D48D30 /* deepThoughtsTests.m */; };
 		279BB67B1C20E26B00D48D30 /* deepThoughtsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB67A1C20E26B00D48D30 /* deepThoughtsUITests.m */; };
-		27A4179B1C30EE0500AFC764 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A4179A1C30EE0500AFC764 /* SettingsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		27A69CD61C2786B800C7F559 /* NetworkManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A69CD51C2786B800C7F559 /* NetworkManagerTest.m */; settings = {ASSET_TAGS = (); }; };
-		27A69CDC1C27890D00C7F559 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A69CD21C2786A200C7F559 /* NetworkManager.m */; settings = {ASSET_TAGS = (); }; };
+		27A4179B1C30EE0500AFC764 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A4179A1C30EE0500AFC764 /* SettingsViewController.m */; };
+		27A69CD61C2786B800C7F559 /* NetworkManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A69CD51C2786B800C7F559 /* NetworkManagerTest.m */; };
+		27A69CDC1C27890D00C7F559 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A69CD21C2786A200C7F559 /* NetworkManager.m */; };
+		27CC99411C3229B700B58B3B /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27CC99401C3229B700B58B3B /* NavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		27A69CD11C2786A200C7F559 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		27A69CD21C2786A200C7F559 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		27A69CD51C2786B800C7F559 /* NetworkManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManagerTest.m; sourceTree = "<group>"; };
+		27CC993F1C3229B700B58B3B /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NavigationController.h; path = Controllers/NavigationController.h; sourceTree = "<group>"; };
+		27CC99401C3229B700B58B3B /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NavigationController.m; path = Controllers/NavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		279BB6541C20E26B00D48D30 /* deepThoughts */ = {
 			isa = PBXGroup;
 			children = (
+				27CC99421C3229BE00B58B3B /* Controllers */,
 				279BB6581C20E26B00D48D30 /* AppDelegate.h */,
 				279BB6591C20E26B00D48D30 /* AppDelegate.m */,
 				279BB65B1C20E26B00D48D30 /* ViewController.h */,
@@ -151,6 +155,15 @@
 				279BB67C1C20E26B00D48D30 /* Info.plist */,
 			);
 			path = deepThoughtsUITests;
+			sourceTree = "<group>";
+		};
+		27CC99421C3229BE00B58B3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27CC993F1C3229B700B58B3B /* NavigationController.h */,
+				27CC99401C3229B700B58B3B /* NavigationController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +299,7 @@
 			files = (
 				27A69CDC1C27890D00C7F559 /* NetworkManager.m in Sources */,
 				279BB65D1C20E26B00D48D30 /* ViewController.m in Sources */,
+				27CC99411C3229B700B58B3B /* NavigationController.m in Sources */,
 				27A4179B1C30EE0500AFC764 /* SettingsViewController.m in Sources */,
 				279BB65A1C20E26B00D48D30 /* AppDelegate.m in Sources */,
 				279BB6571C20E26B00D48D30 /* main.m in Sources */,
