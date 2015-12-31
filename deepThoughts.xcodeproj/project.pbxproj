@@ -115,19 +115,16 @@
 		279BB6541C20E26B00D48D30 /* deepThoughts */ = {
 			isa = PBXGroup;
 			children = (
+				27DC3A6F1C34B35300D14BB4 /* ViewController */,
 				27CC99421C3229BE00B58B3B /* Controllers */,
 				279BB6581C20E26B00D48D30 /* AppDelegate.h */,
 				279BB6591C20E26B00D48D30 /* AppDelegate.m */,
-				279BB65B1C20E26B00D48D30 /* MainViewController.h */,
-				279BB65C1C20E26B00D48D30 /* MainViewController.m */,
-				27A417991C30EE0500AFC764 /* SettingsViewController.h */,
-				27A4179A1C30EE0500AFC764 /* SettingsViewController.m */,
 				27A69CD11C2786A200C7F559 /* NetworkManager.h */,
 				27A69CD21C2786A200C7F559 /* NetworkManager.m */,
-				279BB65E1C20E26B00D48D30 /* Main.storyboard */,
-				279BB6551C20E26B00D48D30 /* Supporting Files */,
 				27CC99431C322E0700B58B3B /* CircleTransitionAnimator.h */,
 				27CC99441C322E0700B58B3B /* CircleTransitionAnimator.m */,
+				279BB65E1C20E26B00D48D30 /* Main.storyboard */,
+				279BB6551C20E26B00D48D30 /* Supporting Files */,
 			);
 			path = deepThoughts;
 			sourceTree = "<group>";
@@ -169,6 +166,17 @@
 				27CC99401C3229B700B58B3B /* NavigationController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		27DC3A6F1C34B35300D14BB4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				279BB65B1C20E26B00D48D30 /* MainViewController.h */,
+				279BB65C1C20E26B00D48D30 /* MainViewController.m */,
+				27A417991C30EE0500AFC764 /* SettingsViewController.h */,
+				27A4179A1C30EE0500AFC764 /* SettingsViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
