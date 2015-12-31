@@ -43,7 +43,7 @@
 }
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
-    [self.transitionContext completeTransition: [self.transitionContext transitionWasCancelled]];
+    [self.transitionContext completeTransition:YES];
     [self.transitionContext viewControllerForKey: @"UITransitionContextFromViewControllerKey"].view.layer.mask = nil;
 }
 
