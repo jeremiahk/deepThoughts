@@ -38,8 +38,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV7-rr-TGv">
-                                <rect key="frame" x="541" y="30" width="44" height="44"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bnj-cp-UbR">
+                                <rect key="frame" x="0.0" y="62" width="600" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Tqs-G7-seq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7DX-qX-XQc"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV7-rr-TGv">
+                                <rect key="frame" x="541" y="10" width="44" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="3Ay-bZ-G3g"/>
@@ -57,14 +65,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Bnj-cp-UbR" firstAttribute="top" secondItem="zV7-rr-TGv" secondAttribute="bottom" constant="8" id="31T-1J-3gB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bnj-cp-UbR" secondAttribute="bottom" id="Bta-6t-obP"/>
                             <constraint firstItem="zV7-rr-TGv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="L7G-sQ-BIy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zV7-rr-TGv" secondAttribute="trailing" constant="-5" id="SaH-fQ-N9c"/>
+                            <constraint firstItem="Bnj-cp-UbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="UIc-07-gle"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bnj-cp-UbR" secondAttribute="trailing" constant="-20" id="W2T-l1-M5d"/>
+                            <constraint firstItem="Bnj-cp-UbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tz4-dT-0R9"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tz4-dT-0R9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="mL9-Vy-Ji5"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="button" destination="zV7-rr-TGv" id="vLB-lf-AyA"/>
+                        <outlet property="tableView" destination="Bnj-cp-UbR" id="ulR-dQ-hgs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
