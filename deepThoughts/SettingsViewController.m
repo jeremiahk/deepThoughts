@@ -16,12 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-//    _buttonWidth.constant = 0;
-//    _buttonHeight.constant = 0;
-//    
-//    [self.view layoutIfNeeded];
+    CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.0, 0.0);
+    _button.transform = transform;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -30,14 +31,24 @@
     [self animateButton];
 }
 
-- (void)animateButton {
-    
-//    _buttonHeight.constant = 44;
-//    _buttonWidth.constant = 44;
-//    
-//    [UIView animateWithDuration:1.0 animations:^{
-//        [self.view layoutIfNeeded];
-//    }];
+- (void)animateButton
+{
+    [UIView animateWithDuration: 0.2 animations: ^{
+        CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.25, 1.25);
+        _button.transform = transform;
+    } completion: ^(BOOL finished) {
+        
+        [UIView animateWithDuration:0.20 animations: ^{
+            CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.95, 0.95);
+            _button.transform = transform;
+        } completion: ^(BOOL finished) {
+            
+            [UIView animateWithDuration:0.25 animations: ^{
+                CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
+                _button.transform = transform;
+            }];
+        }];
+    }];
 }
 
 - (IBAction)circleTouchUpInside:(UIButton *)sender {
