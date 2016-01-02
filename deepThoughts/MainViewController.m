@@ -21,34 +21,18 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.0, 0.0);
-    _button.transform = transform;
+    [_button shrink];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self animateButton];
+    [_button animate];
 }
 
-- (void)animateButton
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [UIView animateWithDuration: 0.2 animations: ^{
-        CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.25, 1.25);
-        _button.transform = transform;
-    } completion: ^(BOOL finished) {
-        
-        [UIView animateWithDuration:0.20 animations: ^{
-            CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.95, 0.95);
-            _button.transform = transform;
-        } completion: ^(BOOL finished) {
-            
-            [UIView animateWithDuration:0.25 animations: ^{
-                CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
-                _button.transform = transform;
-            }];
-        }];
-    }];
+    return [[UITableViewCell alloc] init];
 }
 
 

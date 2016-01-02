@@ -19,6 +19,32 @@
     [path fill];
 }
 
+- (void)shrink
+{
+    CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.0, 0.0);
+    self.transform = transform;
+}
+
+- (void)animate
+{
+    [UIView animateWithDuration: 0.2 animations: ^{
+        CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.25, 1.25);
+        self.transform = transform;
+    } completion: ^(BOOL finished) {
+        
+        [UIView animateWithDuration:0.20 animations: ^{
+            CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.95, 0.95);
+            self.transform = transform;
+        } completion: ^(BOOL finished) {
+            
+            [UIView animateWithDuration:0.25 animations: ^{
+                CGAffineTransform transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
+                self.transform = transform;
+            }];
+        }];
+    }];
+}
+
 - (CGRect)getBackgroundSize
 {
     double offset = self.frame.size.height * 0.3;

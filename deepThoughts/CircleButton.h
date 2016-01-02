@@ -13,5 +13,7 @@
 @property UIColor *backgroundColor;
 
 - (CGRect)getBackgroundSize;
+- (void)shrink;
+- (void)animate;
 
 @end
