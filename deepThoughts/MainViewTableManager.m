@@ -6,8 +6,18 @@
 //  Copyright © 2016 Jeremiah Kistler. All rights reserved.
 //
 
-#import "mainViewTableManager.h"
+#import "MainViewTableManager.h"
 
-@implementation mainViewTableManager
+@implementation MainViewTableManager
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [[UITableViewCell alloc] init];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
 
 @end

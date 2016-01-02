@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewTableManager : NSObject
+@interface MainViewTableManager : NSObject <UITableViewDelegate, UITableViewDataSource>
 
 @end
