@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CircleButton.h"
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet CircleButton *button;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttonWidth;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttonHeight;
 
 @end
