@@ -6,8 +6,8 @@
 //  Copyright © 2016 Jeremiah Kistler. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface SettingsViewTableManager : NSObject
+@interface SettingsViewTableManager :  NSObject <UITableViewDelegate, UITableViewDataSource>
 
 @end
