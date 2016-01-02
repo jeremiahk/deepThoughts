@@ -42,8 +42,8 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Tqs-G7-seq"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="7DX-qX-XQc"/>
+                                    <outlet property="dataSource" destination="6Ka-T8-gfw" id="joK-17-TtE"/>
+                                    <outlet property="delegate" destination="6Ka-T8-gfw" id="Xcq-h2-Cup"/>
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV7-rr-TGv" customClass="CircleButton">
@@ -84,9 +84,11 @@
                     <connections>
                         <outlet property="button" destination="zV7-rr-TGv" id="6Zb-9I-VKC"/>
                         <outlet property="tableView" destination="Bnj-cp-UbR" id="ulR-dQ-hgs"/>
+                        <outlet property="tableViewManager" destination="6Ka-T8-gfw" id="hWX-3y-Zsk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="6Ka-T8-gfw" customClass="MainViewTableManager"/>
             </objects>
             <point key="canvasLocation" x="396" y="975"/>
         </scene>

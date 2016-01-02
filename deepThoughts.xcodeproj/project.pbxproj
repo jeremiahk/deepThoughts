@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		272231181C35F2C500791978 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272231171C35F2C500791978 /* SettingsViewController.m */; };
 		2722311B1C376F1700791978 /* CircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2722311A1C376F1700791978 /* CircleButton.m */; };
+		2722311E1C37804100791978 /* MainViewTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2722311D1C37804100791978 /* MainViewTableManager.m */; };
 		279BB6571C20E26B00D48D30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB6561C20E26B00D48D30 /* main.m */; };
 		279BB65A1C20E26B00D48D30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB6591C20E26B00D48D30 /* AppDelegate.m */; };
 		279BB65D1C20E26B00D48D30 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB65C1C20E26B00D48D30 /* MainViewController.m */; };
@@ -44,6 +45,8 @@
 		272231171C35F2C500791978 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		272231191C376F1700791978 /* CircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleButton.h; sourceTree = "<group>"; };
 		2722311A1C376F1700791978 /* CircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleButton.m; sourceTree = "<group>"; };
+		2722311C1C37804100791978 /* MainViewTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewTableManager.h; sourceTree = "<group>"; };
+		2722311D1C37804100791978 /* MainViewTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewTableManager.m; sourceTree = "<group>"; };
 		279BB6521C20E26B00D48D30 /* deepThoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deepThoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279BB6561C20E26B00D48D30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		279BB6581C20E26B00D48D30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +98,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2722311F1C37807800791978 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				279BB65B1C20E26B00D48D30 /* MainViewController.h */,
+				279BB65C1C20E26B00D48D30 /* MainViewController.m */,
+				2722311C1C37804100791978 /* MainViewTableManager.h */,
+				2722311D1C37804100791978 /* MainViewTableManager.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		272231201C37808700791978 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				27A417991C30EE0500AFC764 /* SettingsViewController.h */,
+				272231171C35F2C500791978 /* SettingsViewController.m */,
+			);
+			name = SettingsView;
+			sourceTree = "<group>";
+		};
 		279BB6491C20E26B00D48D30 = {
 			isa = PBXGroup;
 			children = (
@@ -118,18 +141,17 @@
 		279BB6541C20E26B00D48D30 /* deepThoughts */ = {
 			isa = PBXGroup;
 			children = (
-				27DC3A6F1C34B35300D14BB4 /* ViewController */,
+				272231201C37808700791978 /* SettingsView */,
+				2722311F1C37807800791978 /* MainView */,
 				27CC99421C3229BE00B58B3B /* Controllers */,
-				279BB6581C20E26B00D48D30 /* AppDelegate.h */,
-				279BB6591C20E26B00D48D30 /* AppDelegate.m */,
 				27A69CD11C2786A200C7F559 /* NetworkManager.h */,
 				27A69CD21C2786A200C7F559 /* NetworkManager.m */,
 				27CC99431C322E0700B58B3B /* CircleTransitionAnimator.h */,
 				27CC99441C322E0700B58B3B /* CircleTransitionAnimator.m */,
-				279BB65E1C20E26B00D48D30 /* Main.storyboard */,
-				279BB6551C20E26B00D48D30 /* Supporting Files */,
 				272231191C376F1700791978 /* CircleButton.h */,
 				2722311A1C376F1700791978 /* CircleButton.m */,
+				279BB65E1C20E26B00D48D30 /* Main.storyboard */,
+				279BB6551C20E26B00D48D30 /* Supporting Files */,
 			);
 			path = deepThoughts;
 			sourceTree = "<group>";
@@ -137,6 +159,8 @@
 		279BB6551C20E26B00D48D30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				279BB6581C20E26B00D48D30 /* AppDelegate.h */,
+				279BB6591C20E26B00D48D30 /* AppDelegate.m */,
 				279BB6611C20E26B00D48D30 /* Assets.xcassets */,
 				279BB6631C20E26B00D48D30 /* LaunchScreen.storyboard */,
 				279BB6661C20E26B00D48D30 /* Info.plist */,
@@ -171,17 +195,6 @@
 				27CC99401C3229B700B58B3B /* NavigationController.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		27DC3A6F1C34B35300D14BB4 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				279BB65B1C20E26B00D48D30 /* MainViewController.h */,
-				279BB65C1C20E26B00D48D30 /* MainViewController.m */,
-				27A417991C30EE0500AFC764 /* SettingsViewController.h */,
-				272231171C35F2C500791978 /* SettingsViewController.m */,
-			);
-			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27CC99451C322E0700B58B3B /* CircleTransitionAnimator.m in Sources */,
+				2722311E1C37804100791978 /* MainViewTableManager.m in Sources */,
 				27A69CDC1C27890D00C7F559 /* NetworkManager.m in Sources */,
 				279BB65D1C20E26B00D48D30 /* MainViewController.m in Sources */,
 				27CC99411C3229B700B58B3B /* NavigationController.m in Sources */,
