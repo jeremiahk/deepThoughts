@@ -7,8 +7,11 @@
 //
 
 #import "SettingsViewController.h"
+#import "SettingsTableViewManager.h"
 
 @interface SettingsViewController ()
+
+@property (strong, nonatomic) IBOutlet SettingsTableViewManager *tableViewManager;
 
 @end
 
@@ -32,14 +35,6 @@
 
 - (IBAction)circleTouchUpInside:(UIButton *)sender {
     [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [[UITableViewCell alloc] init];
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
 }
 
 @end
