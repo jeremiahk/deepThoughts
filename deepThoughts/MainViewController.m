@@ -7,8 +7,11 @@
 //
 
 #import "MainViewController.h"
+#import "MainViewTableManager.h"
 
 @interface MainViewController ()
+
+@property (strong, nonatomic) IBOutlet MainViewTableManager *tableViewManager;
 
 @end
 
@@ -29,17 +32,5 @@
     
     [_button animate];
 }
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return [[UITableViewCell alloc] init];
-}
-
-
-
-
-
-
-
 
 @end
