@@ -9,6 +9,7 @@
 #import "CircleTransitionAnimator.h"
 #import "SettingsViewController.h"
 #import "MainViewController.h"
+#import "CircleButton.h"
 
 @implementation CircleTransitionAnimator
 
@@ -22,10 +23,10 @@
     UIView *containerView = [transitionContext containerView];
     MainViewController *fromViewController = (MainViewController *) [transitionContext viewControllerForKey: UITransitionContextFromViewControllerKey];
     SettingsViewController *toViewController = (SettingsViewController *) [transitionContext viewControllerForKey: UITransitionContextToViewControllerKey];
-    UIButton *button = fromViewController.button;
+    CircleButton *button = fromViewController.button;
     [containerView addSubview:toViewController.view];
     
-    UIBezierPath *circleMaskPathInitial = [UIBezierPath bezierPathWithOvalInRect: button.frame];
+    UIBezierPath *circleMaskPathInitial = [UIBezierPath bezierPathWithOvalInRect: button.getBackgroundSize];
     CGPoint extremePoint = CGPointMake(button.center.x - 0, button.center.y - CGRectGetHeight(toViewController.view.bounds));
     float radius = sqrt((extremePoint.x * extremePoint.x) + (extremePoint.y * extremePoint.y));
     UIBezierPath *circleMaskPathFinal = [UIBezierPath bezierPathWithOvalInRect: CGRectInset(button.frame, -radius, -radius)];
