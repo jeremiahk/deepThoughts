@@ -6,9 +6,9 @@
 //  Copyright © 2016 Jeremiah Kistler. All rights reserved.
 //
 
-#import "MainViewTableManager.h"
+#import "MainTableViewManager.h"
 
-@implementation MainViewTableManager
+@implementation MainTableViewManager
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

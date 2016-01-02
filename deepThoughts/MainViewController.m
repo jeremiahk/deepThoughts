@@ -7,11 +7,11 @@
 //
 
 #import "MainViewController.h"
-#import "MainViewTableManager.h"
+#import "MainTableViewManager.h"
 
 @interface MainViewController ()
 
-@property (strong, nonatomic) IBOutlet MainViewTableManager *tableViewManager;
+@property (strong, nonatomic) IBOutlet MainTableViewManager *tableViewManager;
 
 @end
 

@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		272231181C35F2C500791978 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272231171C35F2C500791978 /* SettingsViewController.m */; };
 		2722311B1C376F1700791978 /* CircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2722311A1C376F1700791978 /* CircleButton.m */; };
-		2722311E1C37804100791978 /* MainViewTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2722311D1C37804100791978 /* MainViewTableManager.m */; };
+		2722311E1C37804100791978 /* MainTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2722311D1C37804100791978 /* MainTableViewManager.m */; };
+		272231231C3782A900791978 /* SettingsTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 272231221C3782A900791978 /* SettingsTableViewManager.m */; };
 		279BB6571C20E26B00D48D30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB6561C20E26B00D48D30 /* main.m */; };
 		279BB65A1C20E26B00D48D30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB6591C20E26B00D48D30 /* AppDelegate.m */; };
 		279BB65D1C20E26B00D48D30 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB65C1C20E26B00D48D30 /* MainViewController.m */; };
@@ -45,8 +46,10 @@
 		272231171C35F2C500791978 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		272231191C376F1700791978 /* CircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleButton.h; sourceTree = "<group>"; };
 		2722311A1C376F1700791978 /* CircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleButton.m; sourceTree = "<group>"; };
-		2722311C1C37804100791978 /* MainViewTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewTableManager.h; sourceTree = "<group>"; };
-		2722311D1C37804100791978 /* MainViewTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewTableManager.m; sourceTree = "<group>"; };
+		2722311C1C37804100791978 /* MainTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewManager.h; sourceTree = "<group>"; };
+		2722311D1C37804100791978 /* MainTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewManager.m; sourceTree = "<group>"; };
+		272231211C3782A900791978 /* SettingsTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewManager.h; sourceTree = "<group>"; };
+		272231221C3782A900791978 /* SettingsTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewManager.m; sourceTree = "<group>"; };
 		279BB6521C20E26B00D48D30 /* deepThoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deepThoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279BB6561C20E26B00D48D30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		279BB6581C20E26B00D48D30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,8 +106,8 @@
 			children = (
 				279BB65B1C20E26B00D48D30 /* MainViewController.h */,
 				279BB65C1C20E26B00D48D30 /* MainViewController.m */,
-				2722311C1C37804100791978 /* MainViewTableManager.h */,
-				2722311D1C37804100791978 /* MainViewTableManager.m */,
+				2722311C1C37804100791978 /* MainTableViewManager.h */,
+				2722311D1C37804100791978 /* MainTableViewManager.m */,
 			);
 			name = MainView;
 			sourceTree = "<group>";
@@ -114,6 +117,8 @@
 			children = (
 				27A417991C30EE0500AFC764 /* SettingsViewController.h */,
 				272231171C35F2C500791978 /* SettingsViewController.m */,
+				272231211C3782A900791978 /* SettingsTableViewManager.h */,
+				272231221C3782A900791978 /* SettingsTableViewManager.m */,
 			);
 			name = SettingsView;
 			sourceTree = "<group>";
@@ -329,11 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				27CC99451C322E0700B58B3B /* CircleTransitionAnimator.m in Sources */,
-				2722311E1C37804100791978 /* MainViewTableManager.m in Sources */,
+				2722311E1C37804100791978 /* MainTableViewManager.m in Sources */,
 				27A69CDC1C27890D00C7F559 /* NetworkManager.m in Sources */,
 				279BB65D1C20E26B00D48D30 /* MainViewController.m in Sources */,
 				27CC99411C3229B700B58B3B /* NavigationController.m in Sources */,
 				279BB65A1C20E26B00D48D30 /* AppDelegate.m in Sources */,
+				272231231C3782A900791978 /* SettingsTableViewManager.m in Sources */,
 				279BB6571C20E26B00D48D30 /* main.m in Sources */,
 				272231181C35F2C500791978 /* SettingsViewController.m in Sources */,
 				2722311B1C376F1700791978 /* CircleButton.m in Sources */,

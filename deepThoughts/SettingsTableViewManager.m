@@ -6,9 +6,9 @@
 //  Copyright © 2016 Jeremiah Kistler. All rights reserved.
 //
 
-#import "SettingsViewTableManager.h"
+#import "SettingsTableViewManager.h"
 
-@implementation SettingsViewTableManager
+@implementation SettingsTableViewManager
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {

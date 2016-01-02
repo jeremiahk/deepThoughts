@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewTableManager :  NSObject <UITableViewDelegate, UITableViewDataSource>
+@interface SettingsTableViewManager :  NSObject <UITableViewDelegate, UITableViewDataSource>
 
 @end
