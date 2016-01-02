@@ -13,7 +13,7 @@
 @implementation CircleTransitionAnimator
 
 -(NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.5;
+    return 0.25;
 }
 
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
