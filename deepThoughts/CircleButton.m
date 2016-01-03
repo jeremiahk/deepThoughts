@@ -12,8 +12,9 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    CGRect circleForRect = CGRectMake(rect.size.width * 0.3, rect.size.height * 0.3, rect.size.width * 0.4, rect.size.height * 0.4);
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect: circleForRect];
+    CGPoint center = CGPointMake(rect.size.width / 2, rect.size.height / 2);
+    
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:rect.size.width * 0.15 startAngle:0.0 endAngle:6.28319 clockwise:true];
     
     [_backgroundColor setFill];
     [path fill];
