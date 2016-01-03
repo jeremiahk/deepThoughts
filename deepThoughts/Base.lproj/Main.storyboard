@@ -39,7 +39,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bnj-cp-UbR">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="6Ka-T8-gfw" id="joK-17-TtE"/>
@@ -47,11 +47,11 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV7-rr-TGv" customClass="CircleButton">
-                                <rect key="frame" x="546" y="10" width="44" height="44"/>
+                                <rect key="frame" x="536" y="0.0" width="64" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="3Ay-bZ-G3g"/>
-                                    <constraint firstAttribute="height" constant="44" id="srP-jd-Yo9"/>
+                                    <constraint firstAttribute="width" constant="64" id="3Ay-bZ-G3g"/>
+                                    <constraint firstAttribute="height" constant="64" id="srP-jd-Yo9"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -65,19 +65,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bnj-cp-UbR" firstAttribute="top" secondItem="zV7-rr-TGv" secondAttribute="bottom" constant="10" id="31T-1J-3gB"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bnj-cp-UbR" secondAttribute="bottom" id="Bta-6t-obP"/>
-                            <constraint firstItem="zV7-rr-TGv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="L7G-sQ-BIy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zV7-rr-TGv" secondAttribute="trailing" constant="-10" id="SaH-fQ-N9c"/>
+                            <constraint firstItem="Bnj-cp-UbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="H6X-hU-Qtx"/>
+                            <constraint firstItem="zV7-rr-TGv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="L7G-sQ-BIy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zV7-rr-TGv" secondAttribute="trailing" constant="-20" id="SaH-fQ-N9c"/>
                             <constraint firstItem="Bnj-cp-UbR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="UIc-07-gle"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bnj-cp-UbR" secondAttribute="trailing" constant="-20" id="W2T-l1-M5d"/>
-                            <constraint firstItem="Bnj-cp-UbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tz4-dT-0R9"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="tz4-dT-0R9"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="mL9-Vy-Ji5"/>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -104,12 +98,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y0V-mN-oZ3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Z1K-qT-2DX" id="lTw-dS-fQG"/>
+                                    <outlet property="delegate" destination="Z1K-qT-2DX" id="uPT-R6-4io"/>
+                                </connections>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n2-dy-dvi" customClass="CircleButton">
-                                <rect key="frame" x="546" y="10" width="44" height="44"/>
+                                <rect key="frame" x="536" y="0.0" width="64" height="64"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="JAD-Lc-zbQ"/>
-                                    <constraint firstAttribute="height" constant="44" id="cEN-RO-v70"/>
+                                    <constraint firstAttribute="width" constant="64" id="JAD-Lc-zbQ"/>
+                                    <constraint firstAttribute="height" constant="64" id="cEN-RO-v70"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
@@ -120,23 +122,15 @@
                                     <action selector="circleTouchUpInside:" destination="QdY-l1-OUB" eventType="touchUpInside" id="vJv-ty-yiT"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y0V-mN-oZ3">
-                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Z1K-qT-2DX" id="lTw-dS-fQG"/>
-                                    <outlet property="delegate" destination="Z1K-qT-2DX" id="uPT-R6-4io"/>
-                                </connections>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Y0V-mN-oZ3" secondAttribute="trailing" constant="-20" id="LBQ-M0-uaB"/>
-                            <constraint firstItem="5n2-dy-dvi" firstAttribute="top" secondItem="p7A-cR-aZA" secondAttribute="bottom" constant="10" id="UY4-Xl-fVG"/>
+                            <constraint firstItem="5n2-dy-dvi" firstAttribute="top" secondItem="p7A-cR-aZA" secondAttribute="bottom" id="UY4-Xl-fVG"/>
+                            <constraint firstItem="Y0V-mN-oZ3" firstAttribute="top" secondItem="p7A-cR-aZA" secondAttribute="bottom" id="dtl-I3-5QJ"/>
                             <constraint firstItem="suy-fI-K7m" firstAttribute="top" secondItem="Y0V-mN-oZ3" secondAttribute="bottom" id="e1Q-CC-YRs"/>
                             <constraint firstItem="Y0V-mN-oZ3" firstAttribute="leading" secondItem="NJw-QL-D3z" secondAttribute="leadingMargin" constant="-20" id="eTZ-Oc-R78"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5n2-dy-dvi" secondAttribute="trailing" constant="-10" id="s0F-S9-VMg"/>
-                            <constraint firstItem="Y0V-mN-oZ3" firstAttribute="top" secondItem="5n2-dy-dvi" secondAttribute="bottom" constant="10" id="tZB-yR-mnc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5n2-dy-dvi" secondAttribute="trailing" constant="-20" id="s0F-S9-VMg"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
