@@ -8,6 +8,14 @@
 
 #import "MainTableViewCell.h"
 
+@interface MainTableViewCell ()
+//
+//@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
+
+
+@end
+
 @implementation MainTableViewCell
 
 - (void)awakeFromNib {
