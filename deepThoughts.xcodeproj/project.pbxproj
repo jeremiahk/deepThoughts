@@ -11,6 +11,7 @@
 		2722311B1C376F1700791978 /* CircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2722311A1C376F1700791978 /* CircleButton.m */; };
 		2722311E1C37804100791978 /* MainTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2722311D1C37804100791978 /* MainTableViewManager.m */; };
 		272231231C3782A900791978 /* SettingsTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 272231221C3782A900791978 /* SettingsTableViewManager.m */; };
+		272231261C39CE9500791978 /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 272231251C39CE9500791978 /* MainTableViewCell.m */; };
 		279BB6571C20E26B00D48D30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB6561C20E26B00D48D30 /* main.m */; };
 		279BB65A1C20E26B00D48D30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB6591C20E26B00D48D30 /* AppDelegate.m */; };
 		279BB65D1C20E26B00D48D30 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 279BB65C1C20E26B00D48D30 /* MainViewController.m */; };
@@ -50,6 +51,8 @@
 		2722311D1C37804100791978 /* MainTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewManager.m; sourceTree = "<group>"; };
 		272231211C3782A900791978 /* SettingsTableViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewManager.h; sourceTree = "<group>"; };
 		272231221C3782A900791978 /* SettingsTableViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewManager.m; sourceTree = "<group>"; };
+		272231241C39CE9500791978 /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		272231251C39CE9500791978 /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
 		279BB6521C20E26B00D48D30 /* deepThoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deepThoughts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		279BB6561C20E26B00D48D30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		279BB6581C20E26B00D48D30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				279BB65C1C20E26B00D48D30 /* MainViewController.m */,
 				2722311C1C37804100791978 /* MainTableViewManager.h */,
 				2722311D1C37804100791978 /* MainTableViewManager.m */,
+				272231241C39CE9500791978 /* MainTableViewCell.h */,
+				272231251C39CE9500791978 /* MainTableViewCell.m */,
 			);
 			name = MainView;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27CC99451C322E0700B58B3B /* CircleTransitionAnimator.m in Sources */,
+				272231261C39CE9500791978 /* MainTableViewCell.m in Sources */,
 				2722311E1C37804100791978 /* MainTableViewManager.m in Sources */,
 				27A69CDC1C27890D00C7F559 /* NetworkManager.m in Sources */,
 				279BB65D1C20E26B00D48D30 /* MainViewController.m in Sources */,
