@@ -10,4 +10,8 @@
 
 @interface MainTableViewManager : NSObject <UITableViewDelegate, UITableViewDataSource>
 
+//@property (weak, nonatomic) NSMutableArray *titles;
+@property NSMutableArray *titles;
+@property NSMutableArray *categorys;
+
 @end
