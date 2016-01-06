@@ -183,33 +183,19 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Y0V-mN-oZ3" firstAttribute="height" secondItem="NJw-QL-D3z" secondAttribute="height" id="0Td-LA-VS2"/>
-                            <constraint firstItem="Y0V-mN-oZ3" firstAttribute="width" secondItem="NJw-QL-D3z" secondAttribute="width" id="0ok-x6-hj9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Y0V-mN-oZ3" secondAttribute="trailing" constant="-20" id="ML2-nx-1m0"/>
                             <constraint firstItem="5n2-dy-dvi" firstAttribute="top" secondItem="p7A-cR-aZA" secondAttribute="bottom" id="UY4-Xl-fVG"/>
                             <constraint firstItem="suy-fI-K7m" firstAttribute="top" secondItem="Y0V-mN-oZ3" secondAttribute="bottom" id="c2c-tw-NRS"/>
-                            <constraint firstItem="Y0V-mN-oZ3" firstAttribute="top" secondItem="p7A-cR-aZA" secondAttribute="bottom" id="c3E-cT-xck"/>
                             <constraint firstItem="Y0V-mN-oZ3" firstAttribute="top" secondItem="p7A-cR-aZA" secondAttribute="bottom" id="r9Q-eN-5Rp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5n2-dy-dvi" secondAttribute="trailing" constant="-20" id="s0F-S9-VMg"/>
                             <constraint firstItem="Y0V-mN-oZ3" firstAttribute="leading" secondItem="NJw-QL-D3z" secondAttribute="leadingMargin" constant="-20" id="tGd-UY-msf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Y0V-mN-oZ3" secondAttribute="trailing" constant="-16" id="tm8-e3-fxs"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="0Td-LA-VS2"/>
-                                <exclude reference="0ok-x6-hj9"/>
-                                <exclude reference="c3E-cT-xck"/>
-                                <exclude reference="tm8-e3-fxs"/>
-                            </mask>
-                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="button" destination="5n2-dy-dvi" id="IqU-qd-HdN"/>
                         <outlet property="tableView" destination="Y0V-mN-oZ3" id="mia-p8-aNi"/>
-                        <outlet property="tableViewHeightConstraint" destination="0Td-LA-VS2" id="3X0-JT-w8g"/>
                         <outlet property="tableViewManager" destination="Z1K-qT-2DX" id="YLQ-sT-pvT"/>
-                        <outlet property="tableViewWidthConstraint" destination="0ok-x6-hj9" id="9xX-iT-K8Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NHj-AJ-GBj" userLabel="First Responder" sceneMemberID="firstResponder"/>

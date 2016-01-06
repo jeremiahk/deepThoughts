@@ -11,8 +11,7 @@
 
 @interface SettingsViewController : UIViewController 
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet CircleButton *button;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttonWidth;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *buttonHeight;
 
 @end
