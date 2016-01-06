@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93725490570068359" green="0.93725490570068359" blue="0.95686274766921997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bnj-cp-UbR" secondAttribute="bottom" id="Bta-6t-obP"/>
                             <constraint firstItem="Bnj-cp-UbR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="H6X-hU-Qtx"/>
