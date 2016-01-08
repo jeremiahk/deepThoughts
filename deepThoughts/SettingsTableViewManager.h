@@ -10,4 +10,6 @@
 
 @interface SettingsTableViewManager :  NSObject <UITableViewDelegate, UITableViewDataSource>
 
+@property NSMutableArray *categories;
+
 @end
