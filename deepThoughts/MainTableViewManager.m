@@ -23,8 +23,8 @@
         self.titles = titles;
         
         
-        NSArray *categorys =  [[NSArray alloc] initWithObjects:@"Random thoughts", @"Random thoughts1", @"Random thoughts2", nil];
-        self.categorys = categorys;
+        NSArray *categories =  [[NSArray alloc] initWithObjects:@"Random thoughts", @"Random thoughts1", @"Random thoughts2", nil];
+        self.categories = categories;
     }
     return self;
 }
@@ -35,7 +35,7 @@
 {
     MainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"mainCell"];
     
-    cell.categoryLabel.text = _categorys[indexPath.row];
+    cell.categoryLabel.text = _categories[indexPath.row];
     
     UIFont *font = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2];
     NSDictionary *attributes = @{NSFontAttributeName : font, NSForegroundColorAttributeName : [UIColor blackColor]};
